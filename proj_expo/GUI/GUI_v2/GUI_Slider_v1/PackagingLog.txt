@@ -1,0 +1,23 @@
+ant:
+<ant>
+  <mkdir dir="D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1\for_redistribution" />
+  <mkdir dir="D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1\for_testing" />
+  <mkdir dir="D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1\for_redistribution_files_only" />
+</ant>
+mcc -C -o GUI_Slider_v1 -W WinMain:GUI_Slider_v1 -T link:exe -d D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1\for_testing -v D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1.m -a D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1.fig 
+Compiler version: 6.0 (R2015a)
+Dependency analysis by REQUIREMENTS.
+[Warning: Adding path "D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2" to Compiler
+path instance.] 
+Parsing file "D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1.m"
+	(Referenced from: "Compiler Command Line").
+Deleting 0 temporary MEX authorization files.
+Generating file "D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1\for_testing\readme.txt".
+Packaging...
+Adding custom icon E:\PROGRAMS_E\MATLAB\MATLAB Production Server\R2015a\toolbox\compiler\Resources\default_icon.ico to D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1\for_testing\GUI_Slider_v1.exe.
+Attempting to embed the CTF archive into the application D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1\for_testing\GUI_Slider_v1.exe.
+Finished embedding CTF archive. Deleting the external CTF archive.
+Creating the bundle...
+Web based installer created at D:\2015\March\CITD_proj\proj_expo\GUI\GUI_v2\GUI_Slider_v1\for_redistribution\MyAppInstaller_web.exe.
+Packaging complete.
+Elapsed packaging time was: 36 seconds.
