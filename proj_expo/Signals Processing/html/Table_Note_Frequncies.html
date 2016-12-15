@@ -1,0 +1,113 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>Table_Note_Frequncies</title><meta name="generator" content="MATLAB 8.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2015-10-04"><meta name="DC.source" content="Table_Note_Frequncies.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#2"><b>Table of note frequencies</b></a></li></ul></div><pre class="codeinput">F = notefreq(-48:83);
+F = reshape(F,12,11);
+</pre><h2><b>Table of note frequencies</b><a name="2"></a></h2><pre class="codeinput">Rows = {<span class="string">'C'</span>;<span class="string">'C#/Db'</span>;<span class="string">'D'</span>;<span class="string">'Eb/D#'</span>;<span class="string">'E'</span>;<span class="string">'F'</span>;<span class="string">'F#/Gb'</span>;<span class="string">'G'</span>;<span class="keyword">...</span>
+     <span class="string">'Ab/G#'</span>;<span class="string">'A'</span>;<span class="string">'Bb/A#'</span>;<span class="string">'B'</span>};
+Tf = table(F(:,1),F(:,2),F(:,3),F(:,4),F(:,5),<span class="keyword">...</span>
+        F(:,6),F(:,7),F(:,8),F(:,9),F(:,10),<span class="keyword">...</span>
+        F(:,11),<span class="keyword">...</span>
+    <span class="string">'RowNames'</span>,Rows,<span class="keyword">...</span>
+    <span class="string">'VariableNames'</span>,{<span class="string">'C0'</span> <span class="string">'C1'</span> <span class="string">'C2'</span> <span class="string">'C3'</span> <span class="string">'C4'</span> <span class="string">'C5'</span> <span class="string">'C6'</span> <span class="string">'C7'</span> <span class="string">'C8'</span><span class="keyword">...</span>
+     <span class="string">'C9'</span> <span class="string">'C10'</span>})
+</pre><pre class="codeoutput">
+Tf = 
+
+               C0        C1        C2        C3        C4        C5        C6        C7        C8        C9       C10 
+             ______    ______    ______    ______    ______    ______    ______    ______    ______    ______    _____
+
+    C        16.352    32.703    65.406    130.81    261.63    523.25    1046.5      2093      4186      8372    16744
+    C#/Db    17.324    34.648    69.296    138.59    277.18    554.37    1108.7    2217.5    4434.9    8869.8    17740
+    D        18.354    36.708    73.416    146.83    293.66    587.33    1174.7    2349.3    4698.6    9397.3    18795
+    Eb/D#    19.445    38.891    77.782    155.56    311.13    622.25    1244.5      2489      4978    9956.1    19912
+    E        20.602    41.203    82.407    164.81    329.63    659.26    1318.5      2637      5274     10548    21096
+    F        21.827    43.654    87.307    174.61    349.23    698.46    1396.9    2793.8    5587.7     11175    22351
+    F#/Gb    23.125    46.249    92.499       185    369.99    739.99      1480      2960    5919.9     11840    23680
+    G          24.5    48.999    97.999       196       392    783.99      1568      3136    6271.9     12544    25088
+    Ab/G#    25.957    51.913    103.83    207.65     415.3    830.61    1661.2    3322.4    6644.9     13290    26580
+    A          27.5        55       110       220       440       880      1760      3520      7040     14080    28160
+    Bb/A#    29.135     58.27    116.54    233.08    466.16    932.33    1864.7    3729.3    7458.6     14917    29834
+    B        30.868    61.735    123.47    246.94    493.88    987.77    1975.5    3951.1    7902.1     15804    31609
+
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+F = notefreq(-48:83);
+F = reshape(F,12,11);
+%% *Table of note frequencies*
+Rows = {'C';'C#/Db';'D';'Eb/D#';'E';'F';'F#/Gb';'G';...
+     'Ab/G#';'A';'Bb/A#';'B'};
+Tf = table(F(:,1),F(:,2),F(:,3),F(:,4),F(:,5),...
+        F(:,6),F(:,7),F(:,8),F(:,9),F(:,10),...
+        F(:,11),...
+    'RowNames',Rows,...
+    'VariableNames',{'C0' 'C1' 'C2' 'C3' 'C4' 'C5' 'C6' 'C7' 'C8'...
+     'C9' 'C10'})
+
+##### SOURCE END #####
+--></body></html>
